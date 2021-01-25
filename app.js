@@ -23,7 +23,7 @@ async function GetAchievements(appId) {
 }
 
 async function GetPlayerGames() {
-	const result = await fetch('https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=' + API_KEY + '&steamid=' + STEAM_ID + '&format=json');
+	const result = await fetch('https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=' + API_KEY + '&steamid=' + STEAM_ID + '&format=json&include_appinfo=1&include_played_free_games=1');
 	const jsonRes = (await result.json()).response;
 
 	for(const gameId in jsonRes.games) {
