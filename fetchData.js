@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 import fs from 'fs';
 
 // CONFIG
-const API_KEY = '';
+const API_KEY = ''; // Get one here: https://steamcommunity.com/dev/apikey
 const STEAM_ID = '';
 
 // Get Data
@@ -36,10 +36,10 @@ async function GetPlayerGames() {
 
 (async function() {
 	const ply = await GetPlayerSummaries();
-	console.log(ply);
+	//console.log(ply);
 
 	const games = await GetPlayerGames();
-	console.log(games);
+	//console.log(games);
 
 	fs.writeFileSync('games.json', JSON.stringify(games));
 })();
