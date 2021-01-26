@@ -8,7 +8,7 @@ A small script to fetch and parse Achievements & Game list from [Steam API](http
 - Fill **API_KEY** and **STEAM_ID** variables in *fetchData.js* file.
 - Run `npm start`
 
-*Note:* This tool will only be able to query data from owner account and public accounts.
+*Note:* This tool will only be able to query data from API_KEY owner account and public accounts.
 
 # License
 
