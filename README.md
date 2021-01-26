@@ -1,6 +1,6 @@
 # Steam Achievements & Games
 
-A small script to fetch and parse Achievements & Game list from [Steam API](https://partner.steamgames.com/doc/webapi/IPlayerService).
+A small script to fetch and parse Achievements & Game list from Steam API (https://developer.valvesoftware.com/wiki/Steam_Web_API / https://partner.steamgames.com/doc/webapi/IPlayerService).
 
 # How to use ?
 
